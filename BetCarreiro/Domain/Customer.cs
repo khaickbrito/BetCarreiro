@@ -1,6 +1,4 @@
-using BetCarreiro;
-
-namespace BetCarreiro
+namespace BetCarreiro.Domain
 {
     public class Customer
     {
@@ -8,7 +6,7 @@ namespace BetCarreiro
         public string Name { get; private set; }
         public double Cash { get; private set; }
 
-        public Customer(string name, double cash) 
+        public Customer(string name, double cash)
         {
             Id = Guid.NewGuid();
             Name = name;

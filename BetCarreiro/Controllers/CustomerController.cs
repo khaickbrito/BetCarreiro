@@ -1,3 +1,4 @@
+using BetCarreiro.Domain;
 using Microsoft.AspNetCore.Mvc;
 
 namespace BetCarreiro.Controllers
