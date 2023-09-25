@@ -18,7 +18,7 @@ public class Bet
 
     public Bet(Guid id, Guid customerId, Guid eventId, double team, double betValue)
     {
-        Id = id;
+        Id = Guid.NewGuid();
         CustomerId = customerId;
         EventId = eventId;
         Team = team;
