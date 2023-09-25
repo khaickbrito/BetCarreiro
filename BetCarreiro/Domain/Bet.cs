@@ -16,7 +16,7 @@ public class Bet
 
     public DateTime InclusionDate { get; private set; }
 
-    public Bet(Guid id, Guid customerId, Guid eventId, double team, double betValue)
+    public Bet(Guid customerId, Guid eventId, double team, double betValue)
     {
         Id = Guid.NewGuid();
         CustomerId = customerId;
