@@ -2,13 +2,13 @@
 
 public class Bet
 {
-    public Guid Id { get; private set; }
+    public Guid Id { get; set; }
 
     public Guid CustomerId { get; private set; }
 
     public Guid EventId { get; private set; }
 
-    public double Team { get; private set; }
+    public string Team { get; private set; }
 
     public double BetValue { get; private set; }
 
@@ -16,7 +16,7 @@ public class Bet
 
     public DateTime InclusionDate { get; private set; }
 
-    public Bet(Guid customerId, Guid eventId, double team, double betValue)
+    public Bet(Guid customerId, Guid eventId, string team, double betValue, DateTime inclusionDate)
     {
         Id = Guid.NewGuid();
         CustomerId = customerId;
@@ -25,3 +25,4 @@ public class Bet
         BetValue = betValue;
     }
 }
+    
